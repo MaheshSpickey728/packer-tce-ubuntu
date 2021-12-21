@@ -33,7 +33,7 @@ apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
 
-apt-get install -y gnupg rng-tools zip unzip jq nmon make nmap autoconf ntpdate p11-kit
+apt-get install -y logrotate gnupg rng-tools zip unzip jq nmon make autoconf nmap p11-kit
 
 # setup profile
 cat << 'PROFILE' > ${HOME}/.bash_profile
