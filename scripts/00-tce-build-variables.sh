@@ -58,13 +58,17 @@ export OVA_JSON_FILE="${HOME}/ova/kubernetes-node-ova-specs.json"
 export NODE_OS_NAME="ubuntu"
 export NODE_OS_VERSION="20.04"
 
-export GOVC_URL="http://$(pass provider_vcenter_hostname)"
+export GOVC_URL="https://$(pass provider_vcenter_hostname)"
 export GOVC_USERNAME=$(pass provider_vcenter_username)
 export GOVC_PASSWORD=$(pass provider_vcenter_password)
 export GOVC_INSECURE=true
 export GOVC_DATASTORE="${VSPHERE_DATASTORE}"
 export GOVC_NETWORK="${VSPHERE_NETWORK_PG}"
 
-export MY_IP_ADDRESS=`ifconfig ens192 | grep '10.8.' | awk '{ print $2}'`
+# Oracle Linux / Ubuntu
+export MY_IP_ADDRESS=`ifconfig ens192 | grep '192.168.' | awk '{ print $2}'`
+
+# Photon OS
+# export MY_IP_ADDRESS=`ifconfig eth0 | grep '192.168.' | awk '{print $2}' | cut -d ":" -f2`
 
 export METALLB_VIP_RANGE="192.168.130.240-192.168.130.250"
