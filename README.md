@@ -8,7 +8,7 @@
    Build and deploy a custom Oracle Linux R7 VM to a target environment of choice.
    Install Tanzu Community Edition
    Deploy a Management Cluster to Docker as the target infrastructure provider 
-   Deploy a Workload Cluster
+  
    Deploy a Management Cluster to vSphere as the target infrastructure provider 
    Deploy a Workload Cluster
    Deploy Demo Apps, Fluent Bit and Kubernetes Dashboard
