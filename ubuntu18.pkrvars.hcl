@@ -3,7 +3,7 @@
 # juliusn - Sun Dec  5 08:48:39 EST 2021
 #
 # Download Ubuntu Server 18.04 LTS Media and Checksum from:
-# https://cdimage.ubuntu.com/releases/18.04/release/
+#
 #----------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------
